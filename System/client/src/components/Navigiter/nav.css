@@ -1,0 +1,23 @@
+.nav {
+  position: fixed;
+  left: 50px;
+  top: 35px;
+  background-color: black;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.hover {
+  opacity: 0.8;
+  color: #7749E4;
+  font-weight: 600;
+}
+.hover:hover{
+  opacity: 1;
+}
+.nohover {
+  color: #6b6b6b;
+}

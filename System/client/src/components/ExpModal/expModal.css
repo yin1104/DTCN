@@ -1,0 +1,8 @@
+.exp-modal-title {
+  line-height: 60px;
+  padding: 10px;
+  background-image: linear-gradient(to left, #780DF2, #FF7352);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /*需要文字透明*/
+}

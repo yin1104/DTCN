@@ -1,6 +1,7 @@
 import torch
 from torch import nn
 # from torchsummary import summary
+from thop import profile
 
 fs = 250
 
@@ -135,6 +136,9 @@ def test():
     y = model(x)
     print("Output shape:", y.shape)
     print(model)
+    flops, params = profile(model, inputs=(x,))
+    print('flops:{}'.format(flops/2))
+    print('params:{}'.format(params))
 
 
 if __name__ == "__main__":

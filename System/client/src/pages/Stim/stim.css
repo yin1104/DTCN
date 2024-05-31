@@ -1,0 +1,17 @@
+.btn {
+  text-align: center;
+  width: 100px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 22px;
+  font-size: 14px;
+}
+.not {
+  opacity: 0.3;
+  cursor: auto;
+}
+.stim-options {
+  div {
+    line-height: 40px;
+  }
+}

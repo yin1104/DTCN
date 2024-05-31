@@ -1,0 +1,44 @@
+.stim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stim-target-text {
+  text-stroke: 2px black;
+  /* 兼容Webkit(Chrome/Safari)内核浏览器的写法 */
+  -webkit-text-stroke: 2px black;
+  /* text-shadow: 0 2px black, 2px 0 black, -2px 0 black, 0 -2px black; */
+}
+.stim-block-container {
+  overflow: hidden;
+  position: absolute;
+}
+.stim-block-grid {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(10, 9px);
+  grid-template-rows: repeat(10, 9px);
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 5px;
+  /* width: 300px; */
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+.stim-block-grid-all {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(16, 9px);
+  grid-template-rows: repeat(16, 9px);
+  flex-wrap: wrap;
+  /* gap: 4px; */
+  padding: 2px;
+  /* width: 300px; */
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+.stim-block-item {
+  background: #5C5C5C;
+}

@@ -5,7 +5,7 @@ Guney's network proposed in A Deep Neural Network for SSVEP-based Brain-Computer
 Modified from https://github.com/osmanberke/Deep-SSVEP-BCI.git
 """
 from collections import OrderedDict
-# from thop import profile
+from thop import profile
 import torch
 import torch.nn as nn
 import numpy as np
@@ -145,9 +145,9 @@ def test():
     y = model(x)
     print("Output shape:", y.shape)  # torch.Size([2, 40])
     print(model)
-    # flops, params = profile(model, inputs=(x,))
-    # print('flops:{}'.format(flops))
-    # print('params:{}'.format(params))
+    flops, params = profile(model, inputs=(x,))
+    print('flops:{}'.format(flops))
+    print('params:{}'.format(params))
 
 
 
