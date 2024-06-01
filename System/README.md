@@ -23,7 +23,7 @@
 OPENAI_API_KEY="sk-your-key"
 BACK_PORT=8081 # 服务端口
 IS_PROD=True # 布尔值，是否开发环境，没啥关系
-TSS_APPID= # 如果需要语音服务，去官网申请id，密码这些
+TSS_APPID= # 如果需要TTS语音服务，去官网申请id，密码这些
 TSS_APISecret=
 TSS_APIKey=
 TSS_URL=

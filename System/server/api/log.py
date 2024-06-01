@@ -90,7 +90,7 @@ def csv_to_json(file_path):
 
 
 @logApp.post("/report")
-async def read_report(report: Report):
+async def write_report(report: Report):
     cur_report = {
         'log_title': report.log_title,
         'ground_truth': report.ground_truth,
